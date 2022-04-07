@@ -32,18 +32,18 @@ Asena.addCommand({pattern: 'update check$', fromMe: true, desc: Lang.UPDATER_DES
         var degisiklikler = Lang.NEW_UPDATE;
         commits['all'].map(
             (commit) => {
-                degisiklikler += '🔹 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' <' + commit.author_name + '>\n';
+                degisiklikler += '(' + commit.date.substring(0, 10) + ') : *' + commit.message.replace('Update','Fixed').replace('.js','') + '*\n';
             }
         );
         
         await message.client.sendMessage(
             message.jid,
-            degisiklikler + '```', MessageType.text
+            degisiklikler, MessageType.text
         ); 
     }
 }));
 
-Asena.addCommand({pattern: 'update now$', fromMe: true, desc: Lang.UPDATE_NOW_DESC}, (async (message, match) => {
+Asena.addCommand({pattern: 'update start$', fromMe: true, desc: Lang.UPDATE_NOW_DESC}, (async (message, match) => {
     await git.fetch();
     var commits = await git.log([Config.BRANCH + '..origin/' + Config.BRANCH]);
     if (commits.total === 0) {
@@ -52,7 +52,8 @@ Asena.addCommand({pattern: 'update now$', fromMe: true, desc: Lang.UPDATE_NOW_DE
             Lang.UPDATE, MessageType.text
         );    
     } else {
-        var guncelleme = await message.reply(Lang.UPDATING);
+        var guncelleme = await message.client.sendMessage(
+                    message.jid,Lang.UPDATING, MessageType.text);
         if (Config.HEROKU.HEROKU) {
             try {
                 var app = await heroku.get('/apps/' + Config.HEROKU.APP_NAME)
