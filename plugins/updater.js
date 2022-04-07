@@ -52,9 +52,8 @@ Asena.addCommand({pattern: 'update start$', fromMe: true, desc: Lang.UPDATE_NOW_
             Lang.UPDATE, MessageType.text
         );    
     } else {
-        var guncelleme = await message.client.sendMessage(
+            await message.client.sendMessage(
                     message.jid,Lang.UPDATING, MessageType.text);
-        if (Config.HEROKU.HEROKU) {
             try {
                 var app = await heroku.get('/apps/' + Config.HEROKU.APP_NAME)
             } catch {
@@ -82,18 +81,6 @@ Asena.addCommand({pattern: 'update start$', fromMe: true, desc: Lang.UPDATE_NOW_
 
             await message.sendMessage(Lang.AFTER_UPDATE);
             
-        } else {
-            git.pull((async (err, update) => {
-                if(update && update.summary.changes) {
-                    await message.client.sendMessage(
-                        message.jid,Lang.UPDATED_LOCAL, MessageType.text);
-                    exec('npm install').stderr.pipe(process.stderr);
-                } else if (err) {
-                    await message.client.sendMessage(
-                        message.jid,'*❌ Güncelleme başarısız oldu!*\n*Hata:* ```' + err + '```', MessageType.text);
-                }
-            }));
-            await guncelleme.delete();
-        }
+        
     }
 }));
