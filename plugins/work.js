@@ -13,20 +13,20 @@ let baseURI = '/apps/' + config.HEROKU.APP_NAME;
                         ['WORK_TYPE']: 'public'
                     } 
                 });
-                await message.sendMessage('_Switched work type to public_')
+                await message.sendMessage("_Switched work type to public_")
         } else if (match[1] == 'private') {
                 await heroku.patch(baseURI + '/config-vars', { 
                     body: { 
                         ['WORK_TYPE']: 'private'
                     } 
                 });
-                await message.sendMessage(_Switched work type to private_)
+                await message.sendMessage("_Switched work type to private_")
          } else if (match[1] == 'private') {
                 await heroku.patch(baseURI + '/config-vars', { 
                     body: { 
                         ['WORK_TYPE']: 'admin'
                     } 
                 });
-                await message.sendMessage(_Switched work type to admin_)
+                await message.sendMessage("_Switched work type to admin_")
         }
     }));
