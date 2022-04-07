@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Afx-Abu/Abu_ser.git"
+    "url": "git+https://github.com/shefinkl14/Abu.git"
   },
   "keywords": [
     "whatsapp",
@@ -21,9 +21,9 @@
   "developer": "@Afx-Abu",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/Afx-Abu/Abu_ser/issues"
+    "url": "https://github.com/shefinkl14/Abu/issues"
   },
-  "homepage": "https://github.com/Afx-Abu/Abu_ser#readme",
+  "homepage": "https://github.com/shefinkl14/Abu#readme",
   "dependencies": {
     "@adiwajshing/baileys": "3.5.3",
     "@lh2020/speedtest-net": "^2.1.1",
