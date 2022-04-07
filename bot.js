@@ -138,26 +138,26 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         });
 
         console.log(
-            chalk.green.bold('Abu ser Working ' + config.WORKTYPE + ' 𝚗𝚘𝚠 🍃'));
+            chalk.green.bold('Abu ser Working ' + config.WORKTYPE + ' Now 🍃'));
           if (config.LANG == 'EN' || config.LANG == 'ML') {
                 await git.fetch();
                 var commits = await git.log([config.BRANCH + '..origin/' + config.BRANCH]);
                 if (commits.total === 0) {
-                    await conn.sendMessage(conn.user.jid, fs.readFileSync("./media/photo/Abu.png"), MessageType.image, { caption: `*💙ʜᴇʏ ʙʀᴏ ᴀʙᴜ sᴇʀ ɪs  ᴡᴏʀᴋɪɴɢ ` + config.WORKTYPE + ` ❤️* \n\n*💝ᴛʜᴀɴᴋʏᴏᴜ ғᴏʀ ᴜsɪɴɢ  ᴀʙᴜ sᴇʀ ʙᴏᴛ💝* \n\n*💝ᴘʟᴇᴀsᴇ ɴɪɴɢᴀʟᴜᴅᴇ sᴀᴘᴘᴏʀᴛ ᴠᴇɴᴀᴍ 💝** \n\n*😍ᴀᴘᴘᴏ ᴇɴɢᴀɴᴇ ᴘᴏʟɪᴋᴋᴀʟᴇ😍*`});
+                    await conn.sendMessage(conn.user.jid, "_Connected_", MessageType.text);
                 } else {
                     var degisiklikler = Lang.NEW_UPDATE;
                     commits['all'].map(
                         (commit) => {
-                            degisiklikler += '💖 [' + commit.date.substring(0, 10) + ']: ' + commit.message + ' <' + commit.author_name + '>\n';
+                            degisiklikler += '(' + commit.date.substring(0, 10) + ') : *' + commit.message.replace('Update','Fixed').replace('.js','') + '*\n';
                         }
                     );
                     await conn.sendMessage(
                         conn.user.jid,
-                        '```type``` *.update now* ```ᴛᴏ ᴜᴘᴅᴀᴛᴇ```\n\n```ᴡᴀɪᴛ..ᴡᴀɪᴛ..\n\n*ᴘʟᴇᴀsᴇ ᴊᴏɪɴ ɪɴ ɢʀᴏᴜᴘ ᴛʜᴇɴ ᴀsᴋ ᴀᴅᴍɪɴ ᴀʙᴜ sᴇʀ ᴛᴇʟ ᴜᴘᴅᴀᴛᴇᴄʜᴀʏʏᴀᴛᴇ *\n\n*https://chat.whatsapp.com/DNP9Fd1eWrjKz2DalRI2CX* ' + degisiklikler + '```', MessageType.text
+                        '_Type *.update start* to Update Bot_' + degisiklikler + '\n_If there any Error contact Shefin_', MessageType.text
                     ); 
                 } 
           }
-    });//thanx afnanplk
+    });
     setInterval(async () => { 
         var getGMTh = new Date().getHours()
         var getGMTm = new Date().getMinutes()
