@@ -215,9 +215,9 @@
             "IMG": "Uploading photo ```{}``` number ```{} ```..."
         },
         "sticker": {
-            "STICKER_DESC": "ᴄʀᴇᴀᴛɪɴɢ....✨",
-            "NEED_REPLY": "*Reply to a photo or video!*",
-            "DOWNLOADING": "```ᴏɴɴᴜ ᴡᴀɪᴛ ᴀᴋᴜ👁️‍🗨️ ɪᴘᴘᴏ ᴛʜᴀʀᴀᴍ ✔️```"
+            "STICKER_DESC": "It converts your replied photo or video to sticker.",
+            "NEED_REPLY": "_Reply to a photo or short video_",
+            "DOWNLOADING": "_Please wait..._"
         },
         "system_stats": {
             "ALIVE_DESC": "Does bot work?",
@@ -238,15 +238,15 @@
             "REPLY": "*Please Respond to User's Message to Report!*"
         },
         "updater": {
-            "UPDATER_DESC": "ᴄʜᴇᴄᴋs ᴛʜᴇ ᴜᴘᴅᴀᴛᴇ",
-            "UPDATE": "*💫ᴀʙᴜ ᴀʟʀᴇᴀᴅʏ ᴜᴘᴅᴀᴛᴇᴅ*",
-            "NEW_UPDATE": "*ɴᴇᴡ ᴜᴘᴅᴀᴛᴇ ᴀᴠᴀɪʟᴀʙʟᴇ ғᴏʀ ᴀʙᴜ!*\n\nᴄʜᴀɴɢᴇs: https://chat.whatsapp.com/DNP9Fd1eWrjKz2DalRI2CX\n```",
-            "UPDATE_NOW_DESC": "ɪᴛ ᴍᴀᴋᴇs ᴜᴘᴅᴀᴛᴇs.",
-            "UPDATING": "```ᴡᴀɪᴛ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀʏʏᴜ ...👻```",
-            "INVALID_HEROKU": "*❌ Your Heroku app name or api key wrong!*",
-            "UPDATED": "*ᴀʙᴜ ᴜᴘᴅᴀᴛᴇ ᴄᴏᴍᴘʟᴇᴀᴛᴇᴅ‍♀️✅*",
-            "UPDATED_LOCAL": "*✅ ᴜᴘᴅᴀᴛᴇ ᴄᴏᴍᴘʟᴇᴀᴛᴇᴅ!*",
-            "AFTER_UPDATE": "*🐱 ᴀʙᴜ ʀᴇsᴛᴀʀᴛɪɴɢ*",
+            "UPDATER_DESC": "Checks if your bot has updates.",
+            "UPDATE": "_Your bot is completely up-to-date!_",
+            "NEW_UPDATE": "\n",
+            "UPDATE_NOW_DESC": "It makes updates.",
+            "UPDATING": "_Update started_",
+            "INVALID_HEROKU": "_Your Heroku information is wrong_",
+            "UPDATED": "_Update finished_",
+            "UPDATED_LOCAL": "*✅ Successfully Updated!*",
+            "AFTER_UPDATE": "_Restarting_",
             "IN_AF": "*Please check* ```HEROKU_APP_NAME``` *and* ```app name``` *They must be same.*\n*If these two values ​​are the same, please restore* ```HEROKU_API_KEY```\n\n_To access these settings, use Heroku >> App >> Settings >> Reavel Config Vars_\n_To renew your API key, follow these steps, Heroku >> Account >> API Key then replace old api key in config vars._"
         },
         "whois": {
