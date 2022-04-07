@@ -3,7 +3,7 @@ Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 This Only Abu Ser
 Wa.me/+917025994178
-*/
+
 
 const Abu = require('../events');
 const {MessageType, GroupSettingChange, Mimetype, MessageOptions} = require('@adiwajshing/baileys');
@@ -37,3 +37,5 @@ Abu.addCommand({pattern: 'lorzio', fromMe: false, dontAddCommandList: true}, (as
        await message.client.sendMessage(message.jid, button, MessageType.listMessage)
     
     }));
+
+*/
