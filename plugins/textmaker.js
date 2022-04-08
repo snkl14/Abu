@@ -174,8 +174,8 @@ Asena.addCommand({pattern: 'devil ?(.*)', fromMe: wk, dontAddCommandList: true},
                   });
               };
 
-              await download(`${data}`, '/snkl/Alexa/devil.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/snkl/Alexa/devil.jpg'), MessageType.image, { caption: Config.ALL })
+              await download(`${data}`, '/root/Alexa/devil.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/Alexa/devil.jpg'), MessageType.image, { caption: Config.ALL })
               })
           } catch(err) { 
               console.log(err)
@@ -193,8 +193,8 @@ Asena.addCommand({pattern: 'bear ?(.*)', fromMe: wk, dontAddCommandList: true}, 
                   });
               };
 
-              await download(`${data}`, '/snkl/Alexa/bear.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/snkl/Alexa/bear.jpg'), MessageType.image, { caption: Config.ALL })
+              await download(`${data}`, '/root/Alexa/bear.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/Alexa/bear.jpg'), MessageType.image, { caption: Config.ALL })
               })
           } catch(err) { 
               console.log(err)
@@ -221,8 +221,8 @@ Asena.addCommand({pattern: 'wolf ?(.*)', fromMe: wk, dontAddCommandList: true}, 
                   });
               };
 
-              await download(`${data}`, '/snkl/Alexa/wolf.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/snkl/Alexa/wolf.jpg'), MessageType.image, { caption: Config.ALL })
+              await download(`${data}`, '/root/Alexa/wolf.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/Alexa/wolf.jpg'), MessageType.image, { caption: Config.ALL })
               })
           } catch(err) { 
               console.log(err)
@@ -240,8 +240,8 @@ Asena.addCommand({pattern: 'neon ?(.*)', fromMe: wk, dontAddCommandList: true}, 
                   });
               };
 
-              await download(`${data}`, '/snkl/Alexa/neon.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/snkl/Alexa/neon.jpg'), MessageType.image, { caption: Config.ALL })
+              await download(`${data}`, '/root/Alexa/neon.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/Alexa/neon.jpg'), MessageType.image, { caption: Config.ALL })
               })
           } catch(err) { 
               console.log(err)
@@ -259,8 +259,8 @@ Asena.addCommand({pattern: '2neon ?(.*)', fromMe: wk, dontAddCommandList: true},
                   });
               };
 
-              await download(`${data}`, '/snkl/Alexa/neon2.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/snkl/Alexa/neon2.jpg'), MessageType.image, { caption: Config.ALL })
+              await download(`${data}`, '/root/Alexa/neon2.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/Alexa/neon2.jpg'), MessageType.image, { caption: Config.ALL })
               })
           } catch(err) { 
               console.log(err)
@@ -278,8 +278,8 @@ Asena.addCommand({pattern: 'light ?(.*)', fromMe: wk, dontAddCommandList: true},
                   });
               };
 
-              await download(`${data}`, '/snkl/Alexa/li.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/snkl/Alexa/li.jpg'), MessageType.image, { caption: Config.ALL })
+              await download(`${data}`, '/root/Alexa/li.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/Alexa/li.jpg'), MessageType.image, { caption: Config.ALL })
               })
           } catch(err) { 
               console.log(err)
@@ -297,8 +297,8 @@ Asena.addCommand({pattern: 'joker ?(.*)', fromMe: wk, dontAddCommandList: true},
                   });
               };
 
-              await download(`${data}`, '/snkl/Alexa/joker.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/snkl/Alexa/joker.jpg'), MessageType.image, { caption: Config.ALL })
+              await download(`${data}`, '/root/Alexa/joker.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/Alexa/joker.jpg'), MessageType.image, { caption: Config.ALL })
               })
           } catch(err) { 
               console.log(err)
@@ -325,8 +325,8 @@ Asena.addCommand({pattern: 'ninja ?(.*)', fromMe: wk, dontAddCommandList: true},
                   });
               };
 
-              await download(`${data}`, '/snkl/Alexa/ninja.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/snkl/Alexa/ninja.jpg'), MessageType.image, { caption: Config.ALL })
+              await download(`${data}`, '/root/Alexa/ninja.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/Alexa/ninja.jpg'), MessageType.image, { caption: Config.ALL })
               })
           } catch(err) { 
               console.log(err)
@@ -344,8 +344,8 @@ Asena.addCommand({pattern: 'glitter ?(.*)', fromMe: wk, dontAddCommandList: true
                   });
               };
 
-              await download(`${data}`, '/snkl/Alexa/tt.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/snkl/Alexa/tt.jpg'), MessageType.image, { caption: Config.ALL })
+              await download(`${data}`, '/root/Alexa/tt.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/Alexa/tt.jpg'), MessageType.image, { caption: Config.ALL })
               })
           } catch(err) { 
               console.log(err)
@@ -363,8 +363,8 @@ Asena.addCommand({pattern: 'bokeh ?(.*)', fromMe: wk, dontAddCommandList: true},
                   });
               };
 
-              await download(`${data}`, '/snkl/Alexa/bkh.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/snkl/Alexa/bkh.jpg'), MessageType.image, { caption: Config.ALL })
+              await download(`${data}`, '/root/Alexa/bkh.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/Alexa/bkh.jpg'), MessageType.image, { caption: Config.ALL })
               })
           } catch(err) { 
               console.log(err)
@@ -391,8 +391,8 @@ Asena.addCommand({pattern: 'marvel ?(.*)', fromMe: wk, dontAddCommandList: true}
                   });
               };
 
-              await download(`${data}`, '/snkl/Alexa/marvel.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/snkl/Alexa/marvel.jpg'), MessageType.image, { caption: Config.ALL })
+              await download(`${data}`, '/root/Alexa/marvel.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/Alexa/marvel.jpg'), MessageType.image, { caption: Config.ALL })
               })
           } catch(err) { 
               console.log(err)
@@ -419,8 +419,8 @@ Asena.addCommand({pattern: '2marvel ?(.*)', fromMe: wk, dontAddCommandList: true
                   });
               };
 
-              await download(`${data}`, '/snkl/Alexa/mar2.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/snkl/Alexa/mar2.jpg'), MessageType.image, { caption: Config.ALL })
+              await download(`${data}`, '/root/Alexa/mar2.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/Alexa/mar2.jpg'), MessageType.image, { caption: Config.ALL })
               })
           } catch(err) { 
               console.log(err)
@@ -447,8 +447,8 @@ Asena.addCommand({pattern: 'avengers ?(.*)', fromMe: wk, dontAddCommandList: tru
                   });
               };
 
-              await download(`${data}`, '/snkl/Alexa/aven.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/snkl/Alexa/aven.jpg'), MessageType.image, { caption: Config.ALL })
+              await download(`${data}`, '/root/Alexa/aven.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/Alexa/aven.jpg'), MessageType.image, { caption: Config.ALL })
               })
           } catch(err) { 
               console.log(err)
@@ -475,8 +475,8 @@ Asena.addCommand({pattern: 'glitch ?(.*)', fromMe: wk, dontAddCommandList: true}
                   });
               };
 
-              await download(`${data}`, '/snkl/Alexa/tt2.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/snkl/Alexa/tt2.jpg'), MessageType.image, { caption: Config.ALL })
+              await download(`${data}`, '/root/Alexa/tt2.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/Alexa/tt2.jpg'), MessageType.image, { caption: Config.ALL })
               })
           } catch(err) { 
               console.log(err)
@@ -503,8 +503,8 @@ Asena.addCommand({pattern: 'graf ?(.*)', fromMe: wk, dontAddCommandList: true}, 
                   });
               };
 
-              await download(`${data}`, '/snkl/Alexa/ttgra.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/snkl/Alexa/ttgra.jpg'), MessageType.image, { caption: Config.ALL })
+              await download(`${data}`, '/root/Alexa/ttgra.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/Alexa/ttgra.jpg'), MessageType.image, { caption: Config.ALL })
               })
           } catch(err) { 
               console.log(err)
@@ -531,8 +531,8 @@ Asena.addCommand({pattern: '2graf ?(.*)', fromMe: wk, dontAddCommandList: true},
                   });
               };
 
-              await download(`${data}`, '/snkl/Alexa/t2gra.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/snkl/Alexa/t2gra.jpg'), MessageType.image, { caption: Config.ALL })
+              await download(`${data}`, '/root/Alexa/t2gra.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/Alexa/t2gra.jpg'), MessageType.image, { caption: Config.ALL })
               })
           } catch(err) { 
               console.log(err)
@@ -559,8 +559,8 @@ Asena.addCommand({pattern: 'lion ?(.*)', fromMe: wk, dontAddCommandList: true}, 
                   });
               };
 
-              await download(`${data}`, '/snkl/Alexa/lion.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/snkl/Alexa/lion.jpg'), MessageType.image, { caption: Config.ALL })
+              await download(`${data}`, '/root/Alexa/lion.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/Alexa/lion.jpg'), MessageType.image, { caption: Config.ALL })
               })
           } catch(err) { 
               console.log(err)
@@ -578,8 +578,8 @@ Asena.addCommand({pattern: '3neon ?(.*)', fromMe: wk, dontAddCommandList: true},
                   });
               };
 
-              await download(`${data}`, '/snkl/Alexa/neon3.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/snkl/Alexa/neon3.jpg'), MessageType.image, { caption: Config.ALL })
+              await download(`${data}`, '/root/Alexa/neon3.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/Alexa/neon3.jpg'), MessageType.image, { caption: Config.ALL })
               })
           } catch(err) { 
               console.log(err)
@@ -597,8 +597,8 @@ Asena.addCommand({pattern: 'ice ?(.*)', fromMe: wk, dontAddCommandList: true}, (
                   });
               };
 
-              await download(`${data}`, '/snkl/Alexa/ice.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/snkl/Alexa/ice.jpg'), MessageType.image, { caption: Config.ALL })
+              await download(`${data}`, '/root/Alexa/ice.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/Alexa/ice.jpg'), MessageType.image, { caption: Config.ALL })
               })
           } catch(err) { 
               console.log(err)
@@ -625,8 +625,8 @@ Asena.addCommand({pattern: 'space ?(.*)', fromMe: wk, dontAddCommandList: true},
                   });
               };
 
-              await download(`${data}`, '/snkl/Alexa/space.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/snkl/Alexa/space.jpg'), MessageType.image, { caption: Config.ALL })
+              await download(`${data}`, '/root/Alexa/space.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/Alexa/space.jpg'), MessageType.image, { caption: Config.ALL })
               })
           } catch(err) { 
               console.log(err)
@@ -644,8 +644,8 @@ Asena.addCommand({pattern: 'smoke ?(.*)', fromMe: wk, dontAddCommandList: true},
                   });
               };
 
-              await download(`${data}`, '/snkl/Alexa/smoke.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/snkl/Alexa/smoke.jpg'), MessageType.image, { caption: Config.ALL })
+              await download(`${data}`, '/root/Alexa/smoke.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/Alexa/smoke.jpg'), MessageType.image, { caption: Config.ALL })
               })
           } catch(err) { 
               console.log(err)
@@ -659,8 +659,8 @@ Asena.addCommand({pattern: 'glow ?(.*)', fromMe: wk, dontAddCommandList: true}, 
         });
     };
     var uri = encodeURI(match[1])
-    await download(`https://api.xteam.xyz/photooxy/neonlight?text=${uri}&APIKEY=da5fb2b73ae3e451`, '/snkl/Alexa/glowttp.jpg', async() => {                          
-        await message.client.sendMessage(message.jid,fs.readFileSync('/snkl/Alexa/glowttp.jpg'), MessageType.image, { caption: Config.ALL })
+    await download(`https://api.xteam.xyz/photooxy/neonlight?text=${uri}&APIKEY=da5fb2b73ae3e451`, '/root/Alexa/glowttp.jpg', async() => {                          
+        await message.client.sendMessage(message.jid,fs.readFileSync('/root/Alexa/glowttp.jpg'), MessageType.image, { caption: Config.ALL })
     })
 }));
 Asena.addCommand({pattern: 'fire ?(.*)', fromMe: wk, dontAddCommandList: true}, (async (message, match) => {
@@ -674,8 +674,8 @@ Asena.addCommand({pattern: 'fire ?(.*)', fromMe: wk, dontAddCommandList: true}, 
                   });
               };
 
-              await download(`${data}`, '/snkl/Alexa/tfire.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/snkl/Alexa/tfire.jpg'), MessageType.image, { caption: Config.ALL })
+              await download(`${data}`, '/root/Alexa/tfire.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/Alexa/tfire.jpg'), MessageType.image, { caption: Config.ALL })
               })
           } catch(err) { 
               console.log(err)
@@ -693,8 +693,8 @@ Asena.addCommand({pattern: 'harry ?(.*)', fromMe: wk, dontAddCommandList: true},
                   });
               };
 
-              await download(`${data}`, '/snkl/Alexa/hp.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/snkl/Alexa/hp.jpg'), MessageType.image, { caption: Config.ALL })
+              await download(`${data}`, '/root/Alexa/hp.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/Alexa/hp.jpg'), MessageType.image, { caption: Config.ALL })
               })
           } catch(err) { 
               console.log(err)
@@ -712,8 +712,8 @@ Asena.addCommand({pattern: '4neon ?(.*)', fromMe: wk, dontAddCommandList: true},
                   });
               };
 
-              await download(`${data}`, '/snkl/Alexa/t4n.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/snkl/Alexa/t4n.jpg'), MessageType.image, { caption: Config.ALL })
+              await download(`${data}`, '/root/Alexa/t4n.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/Alexa/t4n.jpg'), MessageType.image, { caption: Config.ALL })
               })
           } catch(err) { 
               console.log(err)
@@ -731,8 +731,8 @@ Asena.addCommand({pattern: 'cemetery ?(.*)', fromMe: wk, dontAddCommandList: tru
                   });
               };
 
-              await download(`${data}`, '/snkl/Alexa/cmth.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/snkl/Alexa/cmth.jpg'), MessageType.image, { caption: Config.ALL })
+              await download(`${data}`, '/root/Alexa/cmth.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/Alexa/cmth.jpg'), MessageType.image, { caption: Config.ALL })
               })
           } catch(err) { 
               console.log(err)
@@ -750,8 +750,8 @@ Asena.addCommand({pattern: 'cup ?(.*)', fromMe: wk, dontAddCommandList: true}, (
                   });
               };
 
-              await download(`${data}`, '/snkl/Alexa/cup.jpg', async() => {                          
-                  await message.client.sendMessage(message.jid,fs.readFileSync('/snkl/Alexa/cup.jpg'), MessageType.image, { caption: Config.ALL })
+              await download(`${data}`, '/root/Alexa/cup.jpg', async() => {                          
+                  await message.client.sendMessage(message.jid,fs.readFileSync('/root/Alexa/cup.jpg'), MessageType.image, { caption: Config.ALL })
               })
           } catch(err) { 
               console.log(err)
