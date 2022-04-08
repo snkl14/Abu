@@ -138,22 +138,17 @@ Asena.addCommand({pattern: 'plugin list$', fromMe: true, dontAddCommandList: tru
 
 Asena.addCommand({pattern: 'remove(?: |$)(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.REMOVE_DESC}, (async (message, match) => {
     if (match[1] === '') return await message.sendMessage(Lang.NEED_PLUGIN);
-    if (!match[1].startsWith('__')) match[1] = '__' + match[1];
-    try {
-        var plugin = await Db.PluginDB.findAll({ where: {name: match[1]} });
-        if (plugin.length < 1) {
-            return await message.sendMessage(message.jid, Lang.NOT_FOUND_PLUGIN, MessageType.text);
-        } else {
-            await plugin[0].destroy();
-            delete require.cache[require.resolve('./' + match[1] + '.js')]
-            fs.unlinkSync('./plugins/' + match[1] + '.js');
-            await message.client.sendMessage(message.jid, Lang.DELETED, MessageType.text);        
-            await new Promise(r => setTimeout(r, 1000));  
-            await message.sendMessage(NLang.AFTER_UPDATE);
-            console.log(baseURI);
-            await heroku.delete(baseURI + '/dynos').catch(async (error) => {
-                await message.sendMessage(error.message);
-            });
-        }
-    } catch (errormsg) { return await message.sendMessage(message.jid, Lang.NOT_FOUND_PLUGIN, MessageType.text) }
+    var plugin = await Db.PluginDB.findAll({ where: {name: match[1]} });
+    if (plugin.length < 1) {
+        return await message.sendMessage(message.jid, Lang.NOT_FOUND_PLUGIN, MessageType.text);
+    } else {
+        await plugin[0].destroy();
+        delete require.cache[require.resolve('./' + match[1] + '.js')]
+        fs.unlinkSync('./plugins/' + match[1] + '.js');
+        await message.client.sendMessage(message.jid, Lang.DELETED + '\n *Restart to make changes!*', MessageType.text);
+        
+        await new Promise(r => setTimeout(r, 1000));
+        
+    }
+
 }));
