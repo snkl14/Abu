@@ -22,11 +22,19 @@ async function checkImAdmin(message, user = message.client.user.jid) {
     });
     return sonuc.includes(true);
 }
-
-Asena.addCommand({pattern: 'kick ?(.*)', fromMe: true, desc: Lang.BAN_DESC}, (async (message, match) => {  
+async function checkUsAdmin(message, user = message.sender) {
+    var grup = await message.client.groupMetadata(message.jid);
+    var sonuc = grup['participants'].map((member) => {     
+        if (member.jid.split("@")[0] == user.split("@")[0] && member.isAdmin) return true; else; return false;
+    });
+    return sonuc.includes(true);
+}
+Asena.addCommand({pattern: 'kick ?(.*)', fromMe: false, desc: Lang.BAN_DESC}, (async (message, match) => {  
     if (message.jid.endsWith('@g.us')) {
     var im = await checkImAdmin(message);
-    if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
+    var um = await checkUsAdmin(message);
+if (!um) return;
+if (!im) return await message.client.sendMessage(message.jid,Lang.IM_NOT_ADMIN,MessageType.text);
 
     if (Config.BANMSG == 'default') {
         if (message.reply_message !== false) {
